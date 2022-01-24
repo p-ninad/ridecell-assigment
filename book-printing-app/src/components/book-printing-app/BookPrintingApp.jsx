@@ -6,7 +6,7 @@ import WelcomeComponent from './WelcomeComponent.jsx'
 import LogoutComponent from './LogoutComponent.jsx'
 import HeaderComponent from './HeaderComponent.jsx'
 import FooterComponent from './FooterComponent.jsx'
-import ShipmentTrackingComponent from './ShipmentTrackingComponent.jsx'
+import BookListComponent from './BookListComponent.jsx'
 import LoginComponent from './LoginComponent.jsx'
 import ErrorComponent from './ErrorComponent.jsx'
 
@@ -22,7 +22,7 @@ class BookPrintingApp extends Component {
                         <Route path='/' exact component={ LoginComponent } />
                         <Route path='/login' component={ LoginComponent } />
                         <AuthenticatedRoute path='/welcome/' component={ WelcomeComponent }/>
-                        <AuthenticatedRoute path='/books' component={ ShipmentTrackingComponent }/>
+                        <AuthenticatedRoute path='/books' component={ BookListComponent }/>
                         <AuthenticatedRoute path='/logout' component={ LogoutComponent }/>
                         <Route component={ ErrorComponent }/>
                     </Switch>

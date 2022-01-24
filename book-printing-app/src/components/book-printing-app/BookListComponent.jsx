@@ -1,7 +1,7 @@
 import { Component } from 'react'
 import BookService from '../../api/book-printing/BookService'
 
-class ShipmentTrackingComponent extends Component {
+class BookListComponent extends Component {
 
     constructor() {
         super()
@@ -61,4 +61,4 @@ class ShipmentTrackingComponent extends Component {
     }
 }
 
-export default ShipmentTrackingComponent
+export default BookListComponent
