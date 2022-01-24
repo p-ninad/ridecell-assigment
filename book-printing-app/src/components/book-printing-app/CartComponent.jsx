@@ -9,12 +9,14 @@ class CartComponent extends Component {
     }
 
     render() {
-        <>
-            <h1>Cart</h1>
-            <div className='container'>
-                
-            </div>
-        </>
+        return(
+            <>
+                <h1>Cart</h1>
+                <div className='container'>
+                        
+                </div>
+            </>
+        )
     }
 }
 

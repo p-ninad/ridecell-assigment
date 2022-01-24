@@ -38,6 +38,7 @@ class BookListComponent extends Component {
                                         <td>{book.author}</td>
                                         <td>{book.format}</td>
                                         <td>{book.price}</td>
+                                        <td><button className='btn btn-success' onClick={ this.addToCart } >Add to cart</button></td>
                                     </tr>
                                 )
                             }
