@@ -40,7 +40,7 @@ class LoginComponent extends Component {
     render() {
         return (
             <div>
-                <h1>Login to GumFu</h1>
+                <h1></h1>
                 <div className='container'>
                     {/* <ShowInvalidCredentials hasLoginFailed={ this.state.hasLoginFailed }/> */}
                     { this.state.hasLoginFailed && <div className='alert alert-warning'>Invalid Credentials!</div> }

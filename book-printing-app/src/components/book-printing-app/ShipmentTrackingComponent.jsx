@@ -16,7 +16,7 @@ class ShipmentTrackingComponent extends Component {
     render() {
         return (
             <div>
-                <h1>Action items</h1>
+                <h1>Books</h1>
                 <div className='container'>
                     <table className='table'>
                         <thead>
