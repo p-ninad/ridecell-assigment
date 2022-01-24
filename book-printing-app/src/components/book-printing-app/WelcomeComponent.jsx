@@ -45,7 +45,6 @@ class WelcomeComponent extends Component {
     }
 
     handleSuccessfulResponse(response) {
-        
         this.setState({
             welcomeMessage: `Status of Shipment ID ${response.data.shipmentId}: ` + response.data.shipmentStatus
         })

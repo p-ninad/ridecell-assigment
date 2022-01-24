@@ -7,7 +7,7 @@ class BookListComponent extends Component {
         super()
         this.state = {
             books: [
-                {isbn:null, title: '', author: null, format: ''}
+                {isbn:null, title: '', author: null, format: '', price:null}
             ]
         }
         this.refresh = this.refresh.bind(this)
@@ -25,6 +25,7 @@ class BookListComponent extends Component {
                             <th>Title</th>
                             <th>Author</th>
                             <th>Format</th>
+                            <th>Price</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -36,6 +37,7 @@ class BookListComponent extends Component {
                                         <td>{book.title}</td>
                                         <td>{book.author}</td>
                                         <td>{book.format}</td>
+                                        <td>{book.price}</td>
                                     </tr>
                                 )
                             }
