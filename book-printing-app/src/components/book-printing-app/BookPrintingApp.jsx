@@ -21,8 +21,8 @@ class BookPrintingApp extends Component {
                     <Switch>
                         <Route path='/' exact component={ LoginComponent } />
                         <Route path='/login' component={ LoginComponent } />
-                        <AuthenticatedRoute path='/welcome/:name' component={ WelcomeComponent }/>
-                        <AuthenticatedRoute path='/shipments' component={ ShipmentTrackingComponent }/>
+                        <AuthenticatedRoute path='/welcome/' component={ WelcomeComponent }/>
+                        <AuthenticatedRoute path='/books' component={ ShipmentTrackingComponent }/>
                         <AuthenticatedRoute path='/logout' component={ LogoutComponent }/>
                         <Route component={ ErrorComponent }/>
                     </Switch>

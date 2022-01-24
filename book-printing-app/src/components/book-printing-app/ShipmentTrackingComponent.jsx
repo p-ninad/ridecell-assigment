@@ -50,7 +50,7 @@ class ShipmentTrackingComponent extends Component {
     }
 
     refresh() {
-        BookService.executeBookService()
+        BookService.getAllBooks()
         .then(response => this.handleRefreshEvent(response))        
     }
 
