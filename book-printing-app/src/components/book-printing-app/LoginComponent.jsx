@@ -26,7 +26,7 @@ class LoginComponent extends Component {
 
     handleLogin() {
         console.log('inside handleLogin')
-        if(this.state.username==='ninad' && this.state.password==='ninad') {
+        if(this.state.username==='testUser' && this.state.password==='dummy') {
             AuthenticationService.registerSuccessfulLogin(this.state.username,this.state.password)
             this.props.history.push(`/welcome/${this.state.username}`)
             // this.setState({hasLoginFailed:false,
