@@ -19,6 +19,9 @@ public class Book {
     @Column(name = "format")
     private String format;
 
+    @Column(name = "price")
+    private double price;
+
     public Book() {
     }
 
@@ -59,5 +62,13 @@ public class Book {
 
     public void setFormat(String format) {
         this.format = format;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 }

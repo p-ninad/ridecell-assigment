@@ -17,7 +17,7 @@ public class ShipmentTrackingController {
     public Shipment getShipmentStatus(@PathVariable Long shipmentId) {
         Shipment shipment = repo.findByShipmentId(shipmentId);
         if(shipment == null) {
-            throw new RuntimeException("No shipment found with ID: " + shipmentId);
+            return new Shipment(-1L, String.format("Shipment with ID <%s> not found", shipmentId), null, null);
         }
         return shipment;
     }
